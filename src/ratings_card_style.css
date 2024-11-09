@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-container{
+    background-image: linear-gradient(to top, hsl(213, 19%, 10%), hsl(213, 19%, 20%));
+
+    max-width: 400px;
+    height: 400px;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    padding: 30px;
+}
+
+.star-svg-container{
+    background-color: hsl(217, 12%, 63%, 0.1);
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.rating-container h1{
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.rating-container p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.numbers-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: hsl(217, 12%, 63%, 0.1);
+    width: 50px;
+    height: 50px;
+
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 700;
+    
+    border-radius: 50%;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.4s;
+}
+
+.submit-btn{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 50px;
+
+    height: 45px;
+    
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    transition: 0.4s;
+}
+
+.active{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+}
+
+.active-hover:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+}
+
+
+/* OTHER SCREENS SIZE */
+
+@media screen and (max-width: 480px) {
+    .rating-container{
+        max-width: 300px;
+        height: 350px;
+        
+        padding: 20px;
+    }
+
+    .rating-container h1{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+    
+    .rating-container p{
+        font-size: 12px;
+    }
+    
+    .btn{
+        width: 45px;
+        height: 45px;
+    }
+}
