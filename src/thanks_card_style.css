@@ -12,6 +12,8 @@
     align-items: center;
 
     padding: 30px;
+
+    box-shadow: 0 0 20px black;
 }
 
 .selected-number{
